@@ -1,0 +1,393 @@
+@import url('https://fonts.googleapis.com/css?family=Do+Hyeon');
+/* http://learnlayout.com/ */
+
+html {
+  background-color: #D9E5E8;
+
+}
+#title {
+  color: purple; /*rgb(198, 201, 255) ; you can also use RGB values*/
+  font-size: 64px;
+  font-family: 'Do Hyeon', sans-serif;
+  text-align: center;
+
+  margin: 0 auto;
+}
+
+#nav li{
+
+  /* list-style-type: none;*/
+  border: 1px solid;
+  /* text-align: center; */
+  padding: 10px;
+  /* border-radius: 10px; */
+  box-sizing: border-box;
+
+  min-width: 24%;
+  /* text-align: right; */
+  /* overflow: hidden; */
+
+  padding-right: 100px;
+  padding-left:100px;
+  display:inline-block;
+  margin: 5px;
+
+}
+ /* .navnames{
+   color:black;
+ } */
+#menu{
+  /* display: inline-block;  */
+  text-align: center;
+  /* left: 20px;
+  top: 20px;
+  float: right; */
+  /* color: black; */
+  width: auto;
+  margin:0;
+  padding:0;
+  /* align:center; */
+}
+#menu a:hover{ /*happens when you hover*/
+/*
+  background: yellow; */
+}
+
+
+#nav {
+  list-style-type: none;
+
+  /*border: 1px solid fuchsia;*/
+  /* text-align: center; */
+
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  /* box-sizing: border-box; */
+
+  /* width: 24%; */
+  /* text-align: right; */
+  /* overflow: hidden; */
+  padding-left: 0px;
+}
+
+#nav li:hover{
+  background-color: lightskyblue;
+}
+.main{
+  text-align: center
+}
+.buttons{
+  font-size: 24px;
+  /* border: none; */
+  /* color: white; */
+  padding: 14px 60px;
+  /* padding: 15px 32px; */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  width: 50%;
+  margin-bottom: 10px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+   transition-duration: 0.4s;
+   width: 100px;
+   background-color: white;
+}
+.buttons:hover{
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  background-color: gray; /* Green */
+  color: white;
+}
+
+.mapouter{
+  height:500px;
+  width:1000px;
+  align-items: center;
+}
+.gmap_canvas {
+  position: absolute;
+  overflow:hidden;
+  background:none
+  !important;
+  height:500px;
+  width:1000px;
+  /* display:inline-block; */
+  align-content: center;
+   /* margin-left: 300px;
+margin-right: 300px;
+margin-top: 20px; */
+left: 50%;
+transform:translate(-50%);
+}
+/*style for cpr*/
+#classbanner2 {
+  color: darkred; /*rgb(198, 201, 255) ; you can also use RGB values*/
+  font-size: 64px;
+  font-family: 'Do Hyeon', sans-serif;
+  text-align: center;
+
+  margin: 0 auto;
+
+}
+
+
+#paragraph {
+  font-size: 30px;
+}
+#chest{
+   width: 40%;
+}
+#mouth{
+  width: 35%;
+}
+
+
+.button{
+  display: block;
+  width: 100%;
+  height: auto;
+  background-color: white;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: LightSkyBlue;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.container {
+  position: relative;
+  /* width: 50%; */
+  display: inline-block;
+
+}
+#usesText, #bioText {
+  font-size: 20px;
+      display: block;
+
+}
+#uses, #bio {
+  font-size: 24px;
+  color: #7272be;
+}
+
+#pictureCardiac{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* width: 50%; */
+    height: 289px;
+    width:260px;
+    margin-top: 30px;
+  }
+#top, .banner{
+  color: black;
+
+}
+
+#bruisesimg{
+  width: 300px;
+
+}
+/* /////////////////////////// */
+body {
+    font-family: ProximaNovaReg, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+h3 {
+    color: #bb3794;
+
+    /* margin: auto; */
+}
+a {
+    color: black;
+    /* text-decoration: none; */
+}
+
+a, a:visited {
+    color: black;
+}
+
+a:hover {
+    /* color: lightskyblue; */
+}
+
+th {
+    text-align: center;
+}
+
+td, th, tr {
+  /* padding-right: 190px;
+  text-align: center; */
+}
+.tabletitle {
+  padding-right: 190px;
+  text-align: center;
+}
+
+table{
+  /* text-align: center;
+  display: block; */
+  margin: auto;
+}
+/* #docs-template{
+  /* display: block;
+  margin: auto;
+} */
+.centered{
+  /* display:block; */
+  /* margin:auto; */
+  text-align: center;
+  color: black;
+}
+.imagecenter {
+  display: block;
+  margin: auto;
+}
+
+#digestiveimg{
+  display: inherit;
+    width: 500px;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.digestivetext{
+  text-align: center;
+  color: black;
+  display:block;
+  /* float:left; */
+}
+/*  ////////////////////*/
+.dropbtn {
+  background-color: #348edb00;
+  color: black;
+  padding: 16px;
+  font-size: 16px;
+  /* border: 12px; */
+  width: auto;
+  margin: 0;
+  padding: 0;
+  /* cursor: pointer; */
+  border: 1px solid black;
+  /* text-align: center; */
+  padding: 10px;
+  /* border-radius: 10px; */
+  box-sizing: border-box;
+  /* width: 24%; */
+  /* text-align: right; */
+  /* overflow: hidden; */
+  padding-right: 100px;
+  padding-left: 100px;
+  display: inline;
+   text-decoration: underline;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: lightskyblue;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+
+.profiles {
+  /* width: 200px; */
+    height: 320px;
+    display: inline-block;
+
+    padding: 20px;
+}
+figure{
+  display: inline-block;
+  /* width: 200px; */
+    height: 320px;
+  padding-left: 20px;
+    padding-right: 20px;
+  margin:auto;
+}
+.authornames{
+  display:inline-block;
+
+padding-left: 95px;
+padding-right: 95px;
+}
+#hygienepic{
+  width:35%;
+  margin:auto;
+  display:block;
+}
+#hygiene{
+  color:purple;
+  font-size: 64px;
+  font-family:'Do Hyeon',sans-serif;
+  text-align: center;
+  padding: 16px, 70px;
+  margin:0 auto;
+}
+
+
+/*
+
+@media only screen and (max-width:800px) {
+  /* For tablets:
+  .nav {
+    width: 80%;
+    padding: 0;
+  }
+  .right {
+    width: 100%;
+  }
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones:
+  .menu, .main, .right {
+    width: 100%;
+  }
+} */

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <title>Resources</title>
+    <link rel="stylesheet" href="styles.css">
+
+  </head>
+  <body>
+
+      <!--HEADER //////////////////////////////////////////////////////  -->
+        <div id= "header">
+      <center>
+        <img id = "logo" src="healthhelperlogo.png" alt="Health Helper" hspace="50">
+      </center>
+          <div id="menu">
+            <ul id="nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="illnessinformation.html">Illness Information</a></li>
+              <!-- <li><a href="resources.html">Resources</a></li> -->
+              <div class="dropdown">
+              <button onclick="myFunction()" class="dropbtn">Resources</button>
+                <div id="myDropdown" class="dropdown-content">
+                  <a href="finddoctor.html">Find a Doctor</a>
+                  <a href="resources.html">Find a Hospital</a>
+
+                </div>
+              </div>
+              <li><a href="generalhealth.html">General Health</a></li>
+              <!--
+              <li><a href="">Find a Doctor</a></li> -->
+              <!-- <a href=""><li>Gallery</li></a>
+              <a href=""><li>Contact</li></a> -->
+            </ul>
+          </div>
+        </div>
+      <!--HEADER //////////////////////////////////////////////////////  -->    <div class = "main">
+      <h1 class = "banner">Find a Hospital Near You</h1>
+      <div class="mapouter"><div class="gmap_canvas"><iframe width="1000" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=hospital%20in%20new%20york&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.embedgooglemap.net"></a></div></div>
+    </div>
+    <script src="scripts.js" charset="utf-8"></script>
+    <script src="dropdown.js" charset="utf-8"></script>
+
+  </body>
+</html>
+
+<!-- https://www.google.com/maps/search/hospital+new+me/@40.7683398,-74.0360664,13z -->
+
+
+<!-- https://maps.google.com/maps?q=hospital%20in%20new%20york&t=&z=13&ie=UTF8&iwloc=&output=embed -->

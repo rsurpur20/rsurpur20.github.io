@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Doctor Search</title>
+      <link rel="stylesheet" href="styles.css"></link>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.min.js"></script>
+</head>
+<body>
+
+  <!--HEADER //////////////////////////////////////////////////////  -->
+    <div id= "header">
+  <center>
+    <img id = "logo" src="healthhelperlogo.png" alt="Health Helper" hspace="50">
+  </center>
+      <div id="menu">
+        <ul id="nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="illnessinformation.html">Illness Information</a></li>
+          <!-- <li><a href="resources.html">Resources</a></li> -->
+          <div class="dropdown">
+          <button onclick="myFunction()" class="dropbtn">Resources</button>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="finddoctor.html">Find a Doctor</a>
+              <a href="resources.html">Find a Hospital</a>
+
+            </div>
+          </div>
+          <li><a href="generalhealth.html">General Health</a></li>
+          <!--
+          <li><a href="">Find a Doctor</a></li> -->
+          <!-- <a href=""><li>Gallery</li></a>
+          <a href=""><li>Contact</li></a> -->
+        </ul>
+      </div>
+    </div>
+  <!--HEADER //////////////////////////////////////////////////////  -->
+
+
+<!-- <h3>BetterDoctor - Doctor Search Results</h3> -->
+<h3 class= "centered">Find doctors within a 10 mile radius</h3>
+
+<div id="content-placeholder"></div>
+<script id="docs-template" type="text/x-handlebars-template">
+    <table>
+        <thead>
+            <th class= "tabletitle">Name</th>
+            <th class= "tabletitle">Title</th>
+            <th>Picture</th>
+        </thead>
+        <tbody>
+        <!-- console.log(data) -->
+        {{#data}}
+        <tr>
+            <td><a href="{{attribution_url}}" target="_new">{{profile.first_name}} {{profile.last_name}}</a><br>
+              <img src="{{ratings.0.image_url_small}}"></img></td>
+            <td>{{profile.title}}</td>
+            <td><img src="{{profile.image_url}}"></img></td>
+        </tr>
+        {{/data}}
+        </tbody>
+    </table>
+</script>
+
+
+
+
+    <script  src="scripts.js"></script>
+    <script scr="dropdown.js"></script>
+
+
+
+
+</body>
+
+</html>
